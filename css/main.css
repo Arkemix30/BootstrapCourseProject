@@ -1,8 +1,5 @@
-body{
-    min-height: 100vh;
+html,body{
     height: 100%;
-    margin:0;
-    padding:0;
 }
 .jumbotron {
     background-color: aliceblue;
@@ -14,9 +11,17 @@ body{
 }
 
 footer{
+    position: fixed; 
+    left: 0;    
+    bottom: 0;
+    width: 100%;
     padding: 10px 10px 0 10px;
     background-color: aliceblue;
     margin-bottom: 0px;
     margin-top: 10px;
-    bottom: 0;
+
+}
+
+.btn-reserva{
+    width: 100%;
 }
