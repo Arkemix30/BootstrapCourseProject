@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+.jumbotron {
+    background-color: aliceblue;
+    color: black;
+}
+.card-hotel{
+    flex: 1 150px;
+    padding: 2px 5px 2px 5px;
+}
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: aliceblue;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    bottom: 0;
+}
