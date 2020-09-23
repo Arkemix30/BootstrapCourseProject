@@ -11,11 +11,10 @@ html,body{
 }
 
 footer{
-    position: fixed; 
     left: 0;    
     bottom: 0;
     width: 100%;
-    padding: 10px 10px 0 10px;
+    padding: 0px 10px 0 10px;
     background-color: aliceblue;
     margin-bottom: 0px;
     margin-top: 10px;
