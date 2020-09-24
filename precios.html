@@ -5,9 +5,8 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0,shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -32,13 +31,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="./about.html" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="./precios.html" class="nav-link">Precios</a></li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">Nosotros</a>
+          </li>
+          <li class="nav-item active">
+            <a href="./precios.html" class="nav-link">Precios</a>
+          </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Terminos y Condiciones</a>
           </li>
-          <li class="nav-item active"><a href="#" class="nav-link">Contacto</a></li>
+          <li class="nav-item">
+            <a href="./contacto.html" class="nav-link">Contacto</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -49,55 +56,50 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+          <li class="breadcrumb-item active" aria-current="page">Precios</li>
         </ol>
       </nav>
     </div>
+
     <div class="container">
-      <h1>Dejame tu comentario</h1>
-      <form action="">
-        <div class="form-row">
-          <div class="form-group col-sm-6">
-            <label for="nombre">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-          </div>
-          <div class="form-group col-sm-6">
-            <label for="apellido">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
-          </div>
-          <div class="form-group col">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-sm-9">
-            <label for="domicilio">Domicilio</label>
-            <input type="text" class="form-control" id="domicilip" placeholder="Ingrese su direccion">
-          </div>
-          <div class="form-group col-sm-3">
-            <label for="provincia">Provincia</label>
-            <select name="" id="provincia" class="form-control">
-              <option selected>Managua</option>
-              <option>Granada</option>
-              <option>Masaya</option>
-              <option>Leon</option>
-            </select>
-          </div>
-          <div class="form-group col-sm-12">
-            <label for="comentario">Comentario</label>
-            <textarea id="comentario" class="form-control" rows="10"></textarea>
-          </div>
-          <div class="form-group col">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <th>Calidad</th>
+            <th>Managua</th>
+            <th>Masaya</th>
+            <th>Granada</th>
+            <th>Leon</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>⭐</td>
+              <td>$100</td>
+              <td>$120</td>
+              <td>$150</td>
+              <td>$180</td>
+            </tr>
+            <tr>
+              <td>⭐⭐</td>
+              <td>$200</td>
+              <td>$220</td>
+              <td>$250</td>
+              <td>$280</td>
+            </tr>
+            <tr>
+              <td>⭐⭐⭐</td>
+              <td>$300</td>
+              <td>$320</td>
+              <td>$350</td>
+              <td>$380</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
     <footer>
+      <div class="container">
         <div class="row">
           <div class="col-sm-4 d-flex flex-column">
             <a href="http://www.facebook.com">Facebook</a>
@@ -120,6 +122,7 @@
             <a href="http://www.twitter.com">Politicas</a>
           </div>
         </div>
+      </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
