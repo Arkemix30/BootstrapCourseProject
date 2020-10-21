@@ -87,12 +87,12 @@
         <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
           <img class="card-img-top"src="https://www.casagranadaproperties.com/wp-content/uploads/2017/06/imagereader-20.jpg" alt="Barcelo Managua Hotel">
           <div class="card-body">
-            <h5 class="card-title">Hotel La Gran Francia</h5>
+            <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis!">Hotel La Gran Francia</h5>
             <h6 class="card-subtitle text-muted">Granada</h6>
             <p class="card-text">Hotel ubicado en Granada, Nicaragua</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva">Reservar</button>
+            <button class="btn btn-primary btn-reserva" data-toggle="popover" data-content="Consulta las promociones vigentes">Reservar</button>
           </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
@@ -177,5 +177,11 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+      });
+    </script>
   </body>
 </html>
