@@ -1,0 +1,35 @@
+$bgcolor: #f0f8ff;
+@mixin margenes($top,$bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+html,body{
+    height: 100%;
+}
+.jumbotron {
+    background-color:$bgcolor;
+    color: black;
+}
+.card-hotel{
+    flex: 1 150px;
+    @include margenes(10px, 0px);
+}
+
+footer{
+    left: 0;    
+    bottom: 0;
+    width: 100%;
+    padding: 0px 10px 0 10px;
+    background-color: $bgcolor;
+   @include margenes(10px, 0px);
+
+}
+
+.btn-reserva{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.tab-content{
+    padding-top: 10px;
+}
