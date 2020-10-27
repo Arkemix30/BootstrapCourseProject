@@ -1,9 +1,22 @@
-//$bgcolor: #f0f8ff;
+//Variables
 $bgcolor: #f0f8ff;
+$yellow: #f6ff00;
+$green: #00ff11;
+$red: #ff0015;
+
+//Mixins
 @mixin margenes($top,$bottom) {
     margin-top: $top;
     margin-bottom: $bottom;
 }
+@mixin mymixin($top,$bottom,$padtop, $padbot, $color) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    padding-top: $padtop;
+    padding-bottom: $padbot;
+    background-color: $color;
+}
+
 html,body{
     height: 100%;
 }
